@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	var contador = 1;
-	$('.menu_bar').click(function(){
+	$('#mostrar-nav').click(function(){
 		$('nav').toggle();
 	});
 });
-
