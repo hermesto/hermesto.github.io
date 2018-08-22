@@ -75,11 +75,15 @@ body{
   display: none;
 }
 header{
+  position: fixed;
+  z-index: 9999;
   width:100%;
 
 }
 header nav{
   background:#023859;
+
+  top:0;
   z-index:1000;
   max-width: 1000px;
   width:95%;
@@ -106,9 +110,10 @@ header nav ul li a span{
 }
 /* fin menu */
 
-header nav ul li:hover .children{
+/* header nav ul li:hover .children{
   display: block;
-}
+} */
+
 header nav ul li .children{
   position: absolute;
   display: none;
@@ -120,6 +125,34 @@ header nav ul li .children li{
    display: block;
 }
 
+.mas::after{
+  content:">";
+  text-align: right;
+  padding:0px 5px;
+}
+.mas.masAfter::after{
+  content: "-";
+}
+.container{
+  /* z-index:1000; */
+  /* background: url('../img/286276.jpg'); */
+  /* background-size: cover; */
+  max-width: 1000px;
+  width:95%;
+  margin:0 auto;
+}
+
+.parallax-window{
+  color: white;
+  text-shadow: 2px 2px rgba(0,0,0,0.7);
+  padding: 100px 35px;
+  background: transparent;
+}
+.info{
+  z-index: 2;
+  position:relative;
+}
+
 @media screen and (max-width: 800px) {
   body{
     padding-top: 80px
@@ -128,6 +161,7 @@ header nav ul li .children li{
     display: block;
     width: 100%;
     position: fixed;
+    z-index: 9999;
     top:0;
     background: #E6344A;
 
@@ -167,5 +201,17 @@ header nav ul li .children li{
   header nav ul li .children li a{
     margin-left: 20px;
   }
-  
+  .menu-menu{
+    display: none;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 801px){
+  /* .menu-menu{
+    display: block;
+  } */
+  .parallax-window{
+    color: red;
+  }
 }
