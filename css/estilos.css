@@ -72,7 +72,7 @@ body{
   background:#eeeeee;
   font-family: 'Roboto Condensed', sans-serif;
   color: rgba(0, 173, 181, 1);
-  text-shadow: 2px 2px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px rgba(0,0,0,0.8);
   font-size: 20px;
   /* font-weight: bold; */
 }
@@ -91,8 +91,12 @@ header nav{
   top:0;
   z-index:1000;
   max-width: 1000px;
+  min-width: 280px;
   width:95%;
   margin:0 auto;
+}
+.clrb{
+  clear: both;
 }
 header nav u{
   list-style: none;
@@ -143,6 +147,7 @@ header nav ul li .children li{
   /* background: url('../img/286276.jpg'); */
   /* background-size: cover; */
   max-width: 1000px;
+  min-width: 280px;
   width:95%;
   margin:0 auto;
 }
@@ -179,6 +184,23 @@ canvas{
 body div:last-child{
   display: none;
 }
+
+.containerText{
+  display: block;
+  clear: both;
+  padding: 15px;
+}
+.containerText ul{
+  padding-left: 20px;
+}
+
+.hl{
+  float:left;display:inline-block;
+}
+.hr{
+  float:right;display:inline-block;
+}
+
 @media screen and (max-width: 800px) {
   body{
     padding-top: 80px
