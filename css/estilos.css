@@ -68,11 +68,12 @@
   box-sizing:border-box;
 }
 body{
-  background:#FEFEFE;
+  margin:0;
+  background:#eeeeee;
   font-family: 'Roboto Condensed', sans-serif;
-  color: white;
+  color: rgba(0, 173, 181, 1);
   text-shadow: 2px 2px rgba(0,0,0,0.7);
-  font-size: 18px;
+  font-size: 20px;
   /* font-weight: bold; */
 }
 .menu_bar{
@@ -85,7 +86,7 @@ header{
 
 }
 header nav{
-  background:#023859;
+  background:#222831;
 
   top:0;
   z-index:1000;
@@ -101,10 +102,10 @@ header nav ul li{
   position: relative;
 }
 header nav ul li:hover{
-  background:#E6344A;
+  background:#393e46;
 }
 header nav ul li a{
-  color:#fff;
+  color:rgba(0, 173, 181, 1);
   display: block;
   text-decoration: none;
   padding: 20px;
@@ -121,7 +122,7 @@ header nav ul li a span{
 header nav ul li .children{
   position: absolute;
   display: none;
-  background: #011826;
+  background: #222831;
   width: 150%;
   z-index: 2000;
 }
@@ -156,10 +157,9 @@ header nav ul li .children li{
   z-index: 2;
   position:relative;
   padding:5px;
-  background: rgba(0,0,0,.3);
+  background: rgba(13, 13, 13, .9);
 }
 /* ---- reset ---- */
-body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
 canvas{
   position: fixed;
   top:0;
@@ -168,7 +168,7 @@ canvas{
 } /* ---- particles.js container ---- */ #particles-js{ position:absolute;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #eeeeee;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,13 +189,13 @@ body div:last-child{
     position: fixed;
     z-index: 9999;
     top:0;
-    background: #E6344A;
+    background: #222831;
 
   }
   .menu_bar .bt-menu{
     display: block;
     padding: 20px;
-    color:#fff;
+    color:rgba(0, 173, 181, 1);
     overflow: hidden;
     font-size: 25px;
     font-weight: bold;
