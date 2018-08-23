@@ -70,6 +70,10 @@
 body{
   background:#FEFEFE;
   font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  text-shadow: 2px 2px rgba(0,0,0,0.7);
+  font-size: 18px;
+  /* font-weight: bold; */
 }
 .menu_bar{
   display: none;
@@ -143,15 +147,25 @@ header nav ul li .children li{
 }
 
 .parallax-window{
-  color: white;
-  text-shadow: 2px 2px rgba(0,0,0,0.7);
+
   padding: 100px 35px;
-  background: transparent;
+  background: rgba(0,0,0,.9);
 }
+
 .info{
   z-index: 2;
   position:relative;
+  padding:5px;
+  background: rgba(0,0,0,.3);
 }
+/* ---- reset ---- */
+body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; }
+canvas{
+  position: fixed;
+  top:0;
+   display: block;
+   vertical-align: bottom;
+} /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #a4a4a4; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
 
 @media screen and (max-width: 800px) {
   body{
