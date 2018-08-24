@@ -149,17 +149,36 @@ header nav ul li .children li{
   max-width: 1000px;
   min-width: 280px;
   width:95%;
-  margin:0 auto;
+  margin:80px auto;
 }
 
-.parallax-window{
+.parallax-window-cont,.parallax-window-exp{
+  position: relative;
+  z-index: 8;
+  padding: 35px 35px;
+  /* background: rgba(0,0,0,.9); */
+}
+.parallax-window-exp{
 
-  padding: 100px 35px;
-  background: rgba(0,0,0,.9);
+  /* padding: 100px 35px; */
+  /* background: url('../img/666905.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-position: right top; */
+}
+.parallax-window-cont{
+
+  /* padding: 100px 35px; */
+  /* background: url('../img/aperture-vintage-472251-unsplash.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-position:0 -550px; */
 }
 
 .info{
-  z-index: 2;
+  z-index: 9;
   position:relative;
   padding:5px;
   background: rgba(13, 13, 13, .9);

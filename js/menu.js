@@ -15,3 +15,14 @@ $(window).resize(function(){
 		$(".menu-menu").show();
 	}
 });
+$(window).scroll(function(){
+	// alert("");
+	var barra= $(window).scrollTop();
+	// alert(barra);
+	// var posicion = barra * 0.30;
+	var posicion = barra * 0.10;
+	var posicion2 = barra * 2;
+	$(".parallax-window-exp").css({'background-position': '-'+posicion+'px 0'
+  });
+	$(".parallax-window-cont").css({'background-position': '0 -'+posicion2+'px'});
+});
