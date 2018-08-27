@@ -301,7 +301,13 @@ display: block!important;
 
 @media screen and (max-width: 800px) {
   body{
-    padding-top: 80px
+    padding-top: 0;
+  }
+  .container{
+    padding: 0 10px;
+  }
+  .container section{
+    padding: 10px;
   }
   .menu_bar{
     display: block;
