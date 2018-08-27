@@ -230,6 +230,15 @@ body > div:last-child{
 .hr{
   float:right;display:inline-block;
 }
+.tblInfoCol{
+  float:left;
+  text-align: right;
+  width: 100px;
+}
+.tblInfoRes{
+  float: left;
+  text-align: left;
+}
 
 /*
 Estilos carousel
@@ -298,16 +307,25 @@ display: block!important;
   content: "O";
   font-size: 20px!important;
 } */
-
+.oculto{
+  display: inline-block;
+}
 @media screen and (max-width: 800px) {
   body{
     padding-top: 0;
+  }
+  .oculto{
+    display: none;
+  }
+  .tblInfoCol,.tblInfoRes{
+    width: 100%;
+    text-align: center;
   }
   .container{
     padding: 0 10px;
   }
   .container section{
-    padding: 10px;
+    padding: 66px 10px 20px 10px;
   }
   .menu_bar{
     display: block;
