@@ -110,11 +110,15 @@ header nav{
   width:95%;
   margin:0 auto;
 }
+.menu-menu{
+    margin:0 auto;
+}
 .clrb{
   clear: both;
 }
 header nav u{
   list-style: none;
+
 }
 header nav ul li{
   display:inline-block;
@@ -263,4 +267,11 @@ header nav ul li .children li{
   }
   footer{
     width: 100%;
+  }
+  @media screen and (min-width:800px) {
+    .menu-menu{
+      margin-left: calc(50% - 500px);
+
+      /* transform: translateX(500px); */
+    }
   }
