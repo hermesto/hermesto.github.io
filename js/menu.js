@@ -40,6 +40,8 @@ $(".menuParte").on("click",function(){
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
+		autoplay:true,
+    autoplayTimeout:3000,
     responsive:{
         0:{
             items:1,
@@ -51,3 +53,21 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+$('.tlt').textillate({loop: true,
+  in: { effect: 'tada' },
+  out: { effect: 'tada' }});
+$('.tltNom').textillate({loop: true,
+  in: { effect: 'pulse' },
+  out: { effect: 'pulse' }});
+$('.tltExp').textillate({loop: true,
+  in: { effect: 'fadeInDown', shuffle:true},
+  out: { effect: 'fadeOutUp', shuffle:true}});
+$('.tltForm').textillate({loop: true,
+  in: { effect: 'rotateInDownLeft', sync:true},
+  out: { effect: 'rotateOutUpRight', reverse:true}});
+$('.tltAnd').textillate({loop: true,
+  in: { effect: 'pulse', sync:true},
+  out: { effect: 'pulse', sync:true}});
+$('.tltSkill').textillate({loop: true,
+  in: { effect: 'wobble', shuffle:true},
+  out: { effect: 'wobble', shuffle:true}});
