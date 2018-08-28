@@ -71,3 +71,6 @@ $('.tltAnd').textillate({loop: true,
 $('.tltSkill').textillate({loop: true,
   in: { effect: 'wobble', shuffle:true},
   out: { effect: 'wobble', shuffle:true}});
+$('.tltBlog').textillate({loop: true,
+  in: { effect: 'flash', sequence:true},
+  out: { effect: 'flash', reverse:true}});

@@ -282,6 +282,11 @@ z-index: 20;
 -moz-animation: opacityIn 1s;
 -o-animation: opacityIn 1s;
 animation: opacityIn 1s;
+transform:scale(.8);
+transition: .8s all;
+}
+.owl-carousel .item:hover{
+  transform:scale(1);
 }
 .owl-carousel .item a{
   display:block;
@@ -334,6 +339,10 @@ carousel
 .itemOne{
   background: url("../img/torre-de-babel.jpg");
   background-size: cover;
+
+}
+.itemOne:hover{
+
 }
 .itemTwo{
   background: url("../img/cropcircles.jpg");
