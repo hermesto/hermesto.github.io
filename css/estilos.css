@@ -320,6 +320,7 @@ display: block!important;
 } */
 .oculto{
   display: inline-block;
+  float:left;
 }
 
 /*
@@ -370,38 +371,14 @@ carousel
   background: url("../img/vida_eterna.jpg");
   background-size: cover;
 }
-.fadeOut  {
-  -webkit-animation-duration : 1000 ms  ;
-  animation-duration : 1000 ms  ;
-  -webkit-animation-fill-mode : both  ;
-  animation-fill-mode : both  ;
-  -webkit-animation-name : fadeOut  ;
-  animation-name : fadeOut  ;
-}
 
-@-webkit-keyframes opacityIn{
-  0%{opacity:0;}
-  100%{opacity:1;}
-}
-@-moz-keyframes opacityIn{
-  0%{opacity:0;}
-  100%{opacity:1;}
-}
-@-o-keyframes opacityIn{
-  0%{opacity:0;}
-  100%{opacity:1;}
-}
- @keyframes opacityIn{
-   0%{opacity:0;}
-   100%{opacity:1;}
- }
 
 @media screen and (max-width: 800px) {
   body{
     padding-top: 0;
   }
   .oculto{
-    display: none;
+    display: none!important;
   }
   .tblInfoCol,.tblInfoRes{
     width: 100%;
