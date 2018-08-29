@@ -29,6 +29,8 @@ $(window).scroll(function(){
 		var auxOff = $(this).offset();
 		if (auxOff.top<=barra && (auxOff.top+$(this).height())>=barra) {
 			$(".menuParte").removeClass("menuParteSel");
+			$(".mas").removeClass("masAfter");
+			$(".children").hide();
 			$('a[href$="'+$(this).attr("id")+'"]').addClass("menuParteSel");
 		}
 	});
