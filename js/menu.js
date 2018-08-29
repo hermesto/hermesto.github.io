@@ -60,8 +60,8 @@ $('.tltNom').textillate({loop: true,
   in: { effect: 'pulse' },
   out: { effect: 'pulse' }});
 $('.tltExp').textillate({loop: true,
-  in: { effect: 'fadeInDown', shuffle:true},
-  out: { effect: 'fadeOutUp', shuffle:true}});
+  in: { effect: 'pulse', sync:true},
+  out: { effect: 'bounce', sequence:true}});
 $('.tltForm').textillate({loop: true,
   in: { effect: 'rotateInDownLeft', sync:true},
   out: { effect: 'rotateOutUpRight', reverse:true}});
