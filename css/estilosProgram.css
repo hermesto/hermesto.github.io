@@ -90,7 +90,7 @@ body{
   background: url("../img/progreso.png");
   background-repeat: no-repeat;
   background-position: center 0;
-  background-size: auto 100vh;
+  background-size: 100vw auto;
   /* font-weight: bold; */
 }
 
